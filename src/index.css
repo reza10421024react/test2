@@ -1,0 +1,38 @@
+:root{
+  --primary:#ff1493;
+}
+*{
+  box-sizing: border-box;
+  user-select: none;
+  list-style-type: none;
+}
+html{
+  direction: rtl;
+  font-family: 'yekan',sans-serif;
+}
+@import "tailwindcss";
+@font-face {
+  font-family: 'yekan';
+  src: url("./assets/fonts/yekan/Yekan.eot");
+  src: url("./assets/fonts/yekan/Yekan.eot?#iefix") format('embedded-opentype'),
+    url('./assets/fonts/yekan/Yekan.woff')format('woff'),
+    url('./assets/fonts/yekan/Yekan.ttf')format('truetype');
+  font-weight: 400;
+  font-style: normal
+}
+
+.scrollbar-none::-webkit-scrollbar{
+  display: none
+}
+
+.custom-btn-shadow{
+    box-shadow: 1px -1px 4px rgba(0, 0, 0, 0.5) inset , -1px 1px 4px rgba(255, 255, 255, 0.5) inset ;
+    transition: .1s linear;
+}
+.custom-btn-shadow:hover{
+    box-shadow: 1px -1px 4px rgba(255, 255, 255, 0.5) inset , -1px 1px 4px rgba(0, 0, 0, 0.5) inset ;
+}
+.custom-btn-shadow-sm{
+    box-shadow: 1px -1px 4px rgba(0, 0, 0, 0.5) inset , -1px 1px 4px rgba(255, 255, 255, 0.5) inset ;
+    transition: .1s linear;
+}
