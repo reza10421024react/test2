@@ -1,5 +1,6 @@
 {
   "name": "main",
+  "homepage": "https://reza10421024react.github.io/test1/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -7,13 +8,16 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy":"npm run build",
+    "deploy":"gh-pages -d dist"
   },
   "dependencies": {
     "@formkit/auto-animate": "^0.9.0",
     "@tailwindcss/vite": "^4.2.0",
     "axios": "^1.13.5",
     "framer-motion": "^12.34.2",
+    "gh-pages": "^6.3.0",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
     "react-icons": "^5.5.0",
